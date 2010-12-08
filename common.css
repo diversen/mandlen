@@ -1,0 +1,310 @@
+code {
+  background:  #eee;
+
+}
+
+
+#hidden {
+    filter:alpha(opacity=90);
+    -moz-opacity:0.0;
+    -khtml-opacity: 0.0;
+    opacity: 0.0;
+
+
+
+    text-align:right;
+}
+
+.filter  {
+    color: #123;
+    padding: 0px 0px 0px 0px;
+    margin-left: 40px;
+    text-align: left;
+    list-style-type:circle;
+    vertical-align:top;
+}
+
+#logo_img {
+
+    margin-left: 185px;
+    width: 100%;
+
+}
+
+#main_menu {
+    position:absolute;
+    float: left;
+    top: 188px;
+    margin-left: 150px;
+    width: 100%;
+}
+
+#main_menu li {
+    float: left;
+    margin-left: 0px;
+    list-style: none;
+
+}
+#main_menu li a {
+    float: left;
+    display: block;
+    background: #ad8c79;
+    padding: 0px 12px 0px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 35px;
+}
+
+#main_menu li a.current {
+    background: #d0df78;
+    color: #fff;
+}
+
+
+#main_menu li a:hover {
+    background: #d0df78
+}
+
+
+#block_menu {
+    margin-top: 50px;
+    top: 174px;
+    margin-left: 10px;
+   
+}
+
+#block_menu_right {
+    font: normal 11px Arial, sans-serif;
+    margin-top: 0px;
+    top: 174px;
+    left: 85%;
+    width:100%;
+}
+
+
+
+#sidebar_left ul  {
+    color: #7d4c34;
+    text-align: left;
+    padding: 0px 6px 0px;
+    vertical-align:top;
+}
+
+#sidebar_left li a.current {
+    color: #d0df78
+
+}
+
+
+#sidebar_left a:link {
+    text-decoration: none;
+    color: #7d4c34;
+}
+#sidebar_left a:visited {
+    text-decoration: none;
+    color: #7d4c34;
+}
+
+#sidebar_left a:hover {
+    text-decoration: none;
+    color: #d0df78
+}
+
+
+#sidebar_left h3 {
+    margin: 0px 0px 0px 0px;
+
+}
+#sidebar_left{
+        background-color: #f8f1e7;
+        filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+
+    position:absolute;
+    
+    /* top: 174px; */
+    top: 200px;
+
+
+    float: left;
+    width: 125px;
+    margin: 0px 0px 0px 60px;
+    padding: 1em;
+    /* background-color: #fff;*/
+}
+
+hr {
+    display: block;
+    color: #7d4c34;
+}
+
+a:link {
+      color: #ad8c79;
+  text-decoration: none;
+}
+
+a:visited {
+      color: #ad8c79;
+  text-decoration: none;
+
+}
+
+a:hover {
+        color: #ad8c79;
+  text-decoration: none;
+}
+
+a:active {
+      color: #ad8c79;
+  text-decoration: none;
+}
+img{  
+    border-style: none;
+}
+
+body {
+    font: normal 13px/20px Arial, sans-serif;
+    color: #7d4c34;
+    background-image: url("/templates/mandlen/body_top.jpg");
+    background-position: 10% 10%;
+    background-repeat:repeat-y;
+}
+
+html {
+    height: 100%;
+    /* overflow:scroll; */
+    /** for scrollbars hidden use overflow:hidden; */
+}
+
+
+
+
+/* specific divs */
+#page {
+    filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+    
+
+    position:absolute;
+    width:80%;
+    text-align:left;
+}
+
+#header {
+    margin-left: 200px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 20px;
+    width: 80%;
+
+}
+
+#search {
+    text-align: right;
+}
+
+
+#sidebar_right {
+        /* background-color: #b6d532;*/
+
+
+    /* top: 174px; */
+    position:absolute;
+    top: 243px;
+
+    float: left;
+    width: 100px;
+    text-align: left;
+    padding: 1em; 
+    left: 95%;
+    /* background-color: #fff;*/
+
+}
+
+#content {
+    margin: 0px 0px 0px 0px;
+    margin-left: 210px;
+    padding: 1em;
+    width: 60%;
+    background-color: #f8f1e7;
+}
+
+fieldset {
+    /* color:#000; */
+
+    /*background-color:#ddd;*/
+
+    border:1px solid #ad8c79;
+}
+
+#content_image {
+    margin: 10px 10px 10px 10px;
+    padding: 0px 0px 0px 0px;
+    float:right;
+}
+
+
+#tabledebug {
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+#tabledebug td, tr {
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+#form_error {
+   color: #F2583E;
+}
+
+#form_confirm {
+    color: #ad8c79;
+}
+
+#system_message {
+}
+
+fieldset {
+    display: block;
+}
+
+label {
+    display: block;
+    float:left;
+}
+
+#module_menu ul {
+    padding: 0;
+    position: relative;
+        background-color: #d0df78;
+}
+
+#module_menu li {
+    display: inline;
+}
+
+#headline {
+
+}
+
+#footer {
+    text-align: center;
+    clear: both;
+}
+
+#thick_hr {
+    color: #7d4c34;
+    background-color: #aaa;
+    height: 0.1px;
+}
+
+#thin_hr {
+    color: #7d4c34;
+    background-color: #aaa;
+    height: 0.1px;
+}
