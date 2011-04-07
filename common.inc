@@ -17,6 +17,7 @@ define('MENU_LIST_END', '</ul>');
 define('MENU_SUBLIST_START', '<li>');
 define('MENU_SUBLIST_END', '</li>');
 define('MENU_SUB_SEPARATOR', ' | ');
+define('MENU_SUB_SEPARATOR_SEC', ' :: ');
 
 /**
  *
