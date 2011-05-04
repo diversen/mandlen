@@ -105,7 +105,7 @@ public static function printHeader(){ ?>
 echo template::$meta;
 
 //$options = array('load_ini_file' => true, 'no_cache' => true);
-template::setCss('/templates/mandlen/common.css?version=10');
+template::setCss('/templates/mandlen/common.css?version=11');
 echo template::getCss();
 template::setJs("http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js", 10);
 template::setJs("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js", 20);
