@@ -100,21 +100,37 @@ public static function printHeader(){ ?>
 <meta name = "keywords" content ="<?=register::$vars['coscms_main']['meta_keywords']?>" />
 
 <title><?php echo $_SERVER['HTTP_HOST']?> :: <?php echo template::getTitle(); ?></title>
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/ui-lightness/jquery-ui.css" />
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
+
+
 <?php
 
 echo template::$meta;
-
-//$options = array('load_ini_file' => true, 'no_cache' => true);
 template::setCss('/templates/mandlen/common.css?version=11');
+
+
+$options = array('load_ini_file' => true, 'no_cache' => true);
+template::setTemplateCss('clean');
+
+//template::setCss('/templates/vertical-accordian/css/my.css');
+//template::setCss('/templates/vertical-accordian/css/skins/graphite.css');
+//template::setCss('/templates/vertical-accordian/css/skins/my-blue.css');
+
+//template::setJs('/templates/vertical-accordian/js/jquery.cookie.js');
+//template::setJs('/templates/vertical-accordian/js/jquery.hoverIntent.minified.js');
+//template::setJs('/templates/vertical-accordian/js/jquery.dcjqaccordion.2.2.js');
+//template::setJs('/templates/vertical-accordian/default.js');
+
+
 echo template::getCss();
-template::setJs("http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js", 10);
-template::setJs("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js", 20);
-//template::setJs('http://dev.jquery.com/view/trunk/plugins/validate/jquery.validate.js');
-echo template::getJs();
 echo template::getInlineCss();
+
+echo template::getJs();
 echo template::getInlineJs();
-
-
 ?>
 
 </head>

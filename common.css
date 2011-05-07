@@ -131,7 +131,7 @@ code {
 
     float: left;
     width: 125px;
-    margin: 0px 0px 0px 60px;
+    margin: 0px 0px 0px 30px;
     padding: 1em;
     /* background-color: #fff;*/
 }
@@ -198,8 +198,8 @@ html {
 #header {
     margin-left: 200px;
     padding: 0px 0px 10px 0px;
-    margin: 0px 0px 20px 20px;
-    width: 80%;
+    margin: 0px 0px 20px -10px;
+    width: 60%;
 
 }
 
@@ -209,10 +209,7 @@ html {
 
 
 #sidebar_right {
-        /* background-color: #b6d532;*/
 
-
-    /* top: 174px; */
     position:absolute;
     top: 243px;
 
@@ -220,16 +217,17 @@ html {
     width: 100px;
     text-align: left;
     padding: 1em; 
-    left: 95%;
+    left: 90%;
+    margin-left: 0px;
     /* background-color: #fff;*/
 
 }
 
 #content {
     margin: 0px 0px 0px 0px;
-    margin-left: 210px;
+    margin-left: 180px;
     padding: 1em;
-    width: 60%;
+    width: 61%;
     background-color: #f8f1e7;
 }
 
