@@ -114,7 +114,6 @@ template::setCss('/templates/mandlen/common.css?version=11');
 
 
 $options = array('load_ini_file' => true, 'no_cache' => true);
-template::setTemplateCss('clean');
 
 //template::setCss('/templates/vertical-accordian/css/my.css');
 //template::setCss('/templates/vertical-accordian/css/skins/graphite.css');
