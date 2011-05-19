@@ -110,7 +110,7 @@ public static function printHeader(){ ?>
 <?php
 
 echo template::$meta;
-template::setCss('/templates/mandlen/common.css?version=11');
+template::setCss('/templates/mandlen/common.css?version=12');
 
 
 $options = array('load_ini_file' => true, 'no_cache' => true);
