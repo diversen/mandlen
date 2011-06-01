@@ -96,8 +96,6 @@ public static function printHeader(){ ?>
 <html lang="<?=register::$vars['coscms_main']['lang']?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name = "description" content ="<?=register::$vars['coscms_main']['meta_desc']?>" />
-<meta name = "keywords" content ="<?=register::$vars['coscms_main']['meta_keywords']?>" />
 
 <title><?php echo $_SERVER['HTTP_HOST']?> :: <?php echo template::getTitle(); ?></title>
     <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/ui-lightness/jquery-ui.css" />
@@ -109,8 +107,8 @@ public static function printHeader(){ ?>
 
 <?php
 
-echo template::$meta;
-template::setCss('/templates/mandlen/common.css?version=12');
+echo template::getMeta();
+template::setCss('/templates/mandlen/common.css?version=14');
 
 
 $options = array('load_ini_file' => true, 'no_cache' => true);
