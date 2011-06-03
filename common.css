@@ -153,8 +153,9 @@ a:visited {
 }
 
 a:hover {
-        color: #ad8c79;
-  text-decoration: none;
+
+    text-decoration: none;
+    color: #666
 }
 
 a:active {
