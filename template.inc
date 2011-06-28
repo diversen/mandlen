@@ -11,7 +11,6 @@ class layout2 extends layout {
      */
     public static function parseModuleMenu($menu, $type){
         $str = '';
-        echo "hello world";
         $str.= MENU_LIST_START . "\n";
         $num_items = $ex = count($menu);
 
@@ -99,8 +98,6 @@ public static function printHeader(){ ?>
 
 <title><?php echo $_SERVER['HTTP_HOST']?> :: <?php echo template::getTitle(); ?></title>
     <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/ui-lightness/jquery-ui.css" />
-
-
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
 
@@ -108,20 +105,10 @@ public static function printHeader(){ ?>
 <?php
 
 echo template::getMeta();
-template::setCss('/templates/mandlen/common.css?version=16');
+template::setCss('/templates/mandlen/common.css?version=17');
 
 
 $options = array('load_ini_file' => true, 'no_cache' => true);
-
-//template::setCss('/templates/vertical-accordian/css/my.css');
-//template::setCss('/templates/vertical-accordian/css/skins/graphite.css');
-//template::setCss('/templates/vertical-accordian/css/skins/my-blue.css');
-
-//template::setJs('/templates/vertical-accordian/js/jquery.cookie.js');
-//template::setJs('/templates/vertical-accordian/js/jquery.hoverIntent.minified.js');
-//template::setJs('/templates/vertical-accordian/js/jquery.dcjqaccordion.2.2.js');
-//template::setJs('/templates/vertical-accordian/default.js');
-
 
 echo template::getCss();
 echo template::getInlineCss();

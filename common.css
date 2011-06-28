@@ -24,6 +24,14 @@ code {
     vertical-align:top;
 }
 
+#logo_title {
+    font-size: 600%;
+    margin-bottom: 50px;
+    font: 600;
+    margin-left: 185px;
+    margin-top: 120px;
+}
+
 #logo_img {
 
     margin-left: 185px;
