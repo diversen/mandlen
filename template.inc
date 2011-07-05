@@ -159,6 +159,7 @@ foreach ($blocks as $key => $val){
 
 ?>
     </div></div>
+    <!--
     <div id="sidebar_right">
         <div id ="block_menu_right">
 <?php
@@ -171,7 +172,7 @@ foreach ($blocks_sec as $key => $val){
 
 ?>
         </div>
-   </div>
+   </div>-->
     <div id="content">
         <div id="module_menu">
 <?php
