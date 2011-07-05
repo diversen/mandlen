@@ -43,7 +43,7 @@ code {
     position:absolute;
     float: left;
     top: 188px;
-    margin-left: 150px;
+    margin-left: 175px;
     width: 100%;
 }
 
@@ -81,14 +81,14 @@ code {
     margin-left: 10px;
    
 }
-
+/*
 #block_menu_right {
     font: normal 11px Arial, sans-serif;
     margin-top: 0px;
     top: 174px;
     left: 85%;
     width:100%;
-}
+}*/
 
 
 
@@ -138,7 +138,7 @@ code {
 
 
     float: left;
-    width: 125px;
+    width: 150px;
     margin: 0px 0px 0px 30px;
     padding: 1em;
     /* background-color: #fff;*/
@@ -200,12 +200,12 @@ html {
     
 
     position:absolute;
-    width:700px;
+    width: 100%;
     text-align:left;
 }
 
 #header {
-    margin-left: 200px;
+    margin-left: 225px;
     padding: 0px 0px 10px 0px;
     margin: 0px 0px 20px -10px;
     width: 60%;
@@ -216,7 +216,7 @@ html {
     text-align: right;
 }
 
-
+/*
 #sidebar_right {
 
     position:absolute;
@@ -228,13 +228,13 @@ html {
     padding: 1em; 
     left: 90%;
     margin-left: 0px;
-    /* background-color: #fff;*/
 
-}
+
+}*/
 
 #content {
     margin: 0px 0px 0px 0px;
-    margin-left: 180px;
+    margin-left: 205px;
     padding: 1em;
     width: 61%;
     background-color: #f8f1e7;
