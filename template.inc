@@ -28,6 +28,8 @@ public static function printHeader(){ ?>
 <?php
 
 template::setTemplateCss('mandlen');
+template::setInlineCss(_COS_PATH . '/modules/order/order.css');
+
 echo template::getCss();
 echo template::getInlineCss();
 
