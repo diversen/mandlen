@@ -1,3 +1,5 @@
+@import url("table.css");
+
 code {
   background:  #eee;
 
@@ -293,3 +295,4 @@ label {
     background-color: #aaa;
     height: 0.1px;
 }
+
