@@ -5,10 +5,11 @@
  *
  * @package    coslib
  */
-define('HTML_FORM_TEXT_SIZE', 30);
+
+define('HTML_FORM_TEXT_SIZE', 60);
 define('HTML_FORM_MAX_FILE_SIZE', 1048576); // 1 MB
 define('HTML_FORM_PASSWD_SIZE', 8);
-define('HTML_FORM_TEXTAREA_WT', 50);
+define('HTML_FORM_TEXTAREA_WT', 70);
 define('HTML_FORM_TEXTAREA_HT', 20);
 define('HTML_FORM_TH_ATTR', 'align="right" valign="top"');
 define('HTML_FORM_TD_ATTR', '');
@@ -43,7 +44,6 @@ function get_form_element_end(){
 
 /**
  * function for printing the forms start
- * @todo    why don't we use return as in the other functions.
  * @param   string   the caption of the form
  */
 function view_form_start($caption){
@@ -61,18 +61,19 @@ function view_form_start($caption){
 function view_form_end(){
     print "</fieldset>\n";
 }
+
 /**
  * function for printing form errors
  *
  * @param  array    errors to display on wrong form submit
  */
-function view_form_errors($errors){ 
+function view_form_errors($errors){
     if (is_string($errors)){
         view_error($errors);
         return;
     }
     echo "<!-- view_form_errors -->\n";
-    echo "<div id=\"form_error\"><ul>\n";
+    echo "<div class=\"form_error\"><ul>\n";
     foreach($errors as $error){
         echo "<li>$error</li>\n";
     }
@@ -80,14 +81,27 @@ function view_form_errors($errors){
     echo "<!-- / end form_error -->\n";
 }
 
+function template_view_errors($errors){
+    if (is_string($errors)){
+        view_error($errors);
+        return;
+    }
+    echo "<!-- view_form_errors -->\n";
+    echo "<div class=\"form_error\"><ul>\n";
+    foreach($errors as $error){
+        echo "<li>DADA$error</li>\n";
+    }
+    echo "</ul></div>\n";
+    echo "<!-- / end form_error -->\n";
+}
+
 /**
  * function for displaying an confirm message
- * @todo not used anymore i think.
  * @param   string   message positive confirmation on correct filled form
  */
 function view_confirm($message){
     echo "<!-- view_confirm -->\n";
-    echo "<div id=\"form_confirm\">\n";
+    echo "<div class=\"form_confirm\">\n";
     echo "<ul><li>$message</li></ul>\n";
     echo "</div>\n";
 }
@@ -98,7 +112,7 @@ function view_confirm($message){
  */
 function view_error($message){
     echo "<!-- view_error -->\n";
-    echo "<div id=\"form_error\">\n";
+    echo "<div class=\"form_error\">\n";
     echo "<p>$message</p></div>\n";
 
 }
@@ -110,7 +124,7 @@ function view_error($message){
  */
 function headline_message($message){
     echo "<!-- headline_message -->\n";
-    echo "<div id=\"headline\">\n";
-    echo "<p><strong>$message</strong></p>\n";
+    echo "<div class=\"headline\">\n";
+    echo "$message\n";
     echo "</div>\n";
 }

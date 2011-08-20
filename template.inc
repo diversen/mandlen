@@ -10,141 +10,146 @@ class mainTemplate extends template {
  * @param  array    assoc array containing current page info
  */
 public static function printHeader(){ ?>
+
+
 <!doctype html>
 <html lang="<?=register::$vars['coscms_main']['lang']?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?php echo template::getTitle(); ?></title>
 
-<title><?php echo $_SERVER['HTTP_HOST']?> :: <?php echo template::getTitle(); ?></title>
+
 <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/hot-sneaks/jquery-ui.css" />
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
-
+    <link href="/templates/mandlen/grid.css" type="text/css" rel="stylesheet" media="screen"/>
 
 <?php
 
-echo template::getMeta();
-
-template::setCss('/templates/mandlen/grid.css');
-template::setCss('/templates/mandlen/common.css?version=17');
-
+template::setTemplateCss('mandlen');
 echo template::getCss();
 echo template::getInlineCss();
 
 echo template::getJs();
 echo template::getInlineJs();
+
 ?>
+
 
 </head>
 <body>
-<div id ="hidden">
+
+    <div id ="hidden">
 <a href="/account/login/index">logon</a>
 </div>
-<div id="page">
 
-    <div id="header">
-        <?php if (empty(register::$vars['coscms_main']['logo'])) { ?>
-            <div id ="logo_title"><a href="/"><?php echo $_SERVER['HTTP_HOST']?></a></div><?php
-        } else { ?>
-            <div id = "logo_img"><a href="/"><img alt="<?php echo $_SERVER['HTTP_HOST']?>" src="/logo/<?=register::$vars['coscms_main']['logo']?>" /></a></div><?php
-        } ?>
-        <div id="main_menu"><?php
-echo layout2::getMainMenu();
+<div id ="page">
 
-?>
+    <div class="row">
+            <div class="column grid_3">
+            &nbsp;
+            </div>
+            <div class="column grid_9">
+
+                <?php if (empty(register::$vars['coscms_main']['logo'])) { ?>
+                <a href="/"><?php echo $_SERVER['HTTP_HOST']?></a><?php
+            } else { ?>
+                <div id = "logo_img"><a href="/"><img alt="<?php echo $_SERVER['HTTP_HOST']?>" src="/logo/<?=register::$vars['coscms_main']['logo']?>" /></a></div><?php
+            } ?>
+
+
+
+            </div>
 
     </div>
-        <div id ="top_blocks">
-<?php
 
-$blocks = layout2::getTopBlocks();
-foreach ($blocks as $key => $val){
-    print $val;
-}
-
-?>
-        </div>
+    <div class="row">
+            <div class="column grid_3">
+            &nbsp;
+            </div>
+            <div class="column grid_9">
+                <div id="main_menu">
+                <?php
+                    echo layout2::getMainMenu(); ?>
+                </div>
+            </div>
     </div>
-    
-    <div id="sidebar_left">
-        <div id ="block_menu">
+
+    <div class="row">
+        <div class="column grid_3">
+                <div id="sidebar_left">
+                <?php
+
+                $blocks = layout::getBlocks();
+                foreach ($blocks as $key => $val){
+                    print $val;
+                }
+
+                ?>
+                </div>
+         </div>
+
+         <div class="column grid_6">
+             <div id="module_menu"><?php
+               echo layout::getModuleMenu(); ?>
+             </div>
+
+             <div class="system_message">
+            <?php
+
+            echo session::getActionMessage();
+
+            ?>
+            </div>
+             <div id="content">
+
+
 <?php
 
-$blocks = layout2::getBlocks();
-foreach ($blocks as $key => $val){
-    print $val;
-}
-
-?>
-        </div>
-    </div>
-    
-    
-    <div id="content">
-        <div id="module_menu">
-<?php
-
-echo layout2::getModuleMenu();
-
-?>
-        </div>
-        <div id="system_message"><p>
-<?php
-
-echo session::getActionMessage();
-
-?>
-        </p></div>
-
-<?php
-
-// content of loaded module will be printed
+// end of function
 
 }
 
 /**
  * method for print footer of page
  */
-public static function printFooter(){
-
-?>
-    <div id="sidebar_right">
-        <div id ="block_menu_right">
-<?php
-
-$blocks_sec = layout2::getBlocksSec();
-foreach ($blocks_sec as $key => $val){
-      print $val;
-}
+public static function printFooter(){ ?>
 
 
-?>
+             </div>
         </div>
-   </div>
+        <div class="column grid_3">
+            <div id="sidebar_right">
+                <?php
 
+                $blocks = layout::getBlocksSec();
+                foreach ($blocks as $key => $val){
+                    print $val;
+                }
 
-            <div id="end_content">
-<?php
-
-echo template::getEndContent();
-
-?>
-        </div>
+                ?>
+            </div>
+         </div>
     </div>
-    <div id="footer">
-    <?=register::$vars['coscms_main']['footer_message']?>
+
+
+    <div class="row">
+            <div class="column grid_12">
+            <?=template::getEndContent()?>
+            </div>
     </div>
+    
 </div>
-<?php
-
-echo template::getEndHTML();
-
-?>
 </body>
 </html>
-<?php
 
-}
+<? 
+
+    // end function
+
+    }
     
-// end of class 
+// end class
 }
+

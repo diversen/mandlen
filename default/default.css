@@ -9,9 +9,6 @@ code {
     -moz-opacity:0.0;
     -khtml-opacity: 0.0;
     opacity: 0.0;
-
-
-
     text-align:right;
 }
 
@@ -34,22 +31,13 @@ code {
 
 #logo_img {
 
-    margin-left: 205px;
     width: 100%;
 
 }
 
-#main_menu {
-    position:absolute;
-    float: left;
-    top: 188px;
-    margin-left: 175px;
-    width: 100%;
-}
 
 #main_menu li {
-    float: left;
-    margin-left: 0px;
+    margin-left: -40px;
     list-style: none;
 
 }
@@ -61,7 +49,7 @@ code {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
-    line-height: 35px;
+    line-height: 50px;
 }
 
 #main_menu li a.current {
@@ -76,73 +64,67 @@ code {
 
 
 #block_menu {
-    margin-top: 50px;
-    top: 174px;
-    margin-left: 10px;
-   
+
+
 }
 
 #block_menu_right {
-    font: normal 11px Arial, sans-serif;
-    margin-top: 0px;
-    top: 174px;
-    left: 85%;
-    width:100%;
+
 }
 
+#sidebar_left{ 
+    background-color: #f8f1e7;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
 
+.block {
 
-#sidebar_left ul  {
+}
+
+#content_tree ul  {
     color: #7d4c34;
-    text-align: left;
-    padding: 0px 6px 0px;
-    vertical-align:top;
+    list-style: none;
+    padding: 0px 7px 0px;
 }
 
-#sidebar_left li a.current {
-    color: #d0df78
+#content_tree li {
+    list-style: none;
+}
 
+#content_tree a {
+    font-size: 225%;
+    line-height: 100%;
+}
+
+#content_tree li a.current {
+    color: #d0df78;
+    list-style: none;
 }
 
 
-#sidebar_left a:link {
+#content_tree a:link {
     text-decoration: none;
     color: #7d4c34;
 }
-#sidebar_left a:visited {
+
+#content_tree a:visited {
     text-decoration: none;
     color: #7d4c34;
 }
 
-#sidebar_left a:hover {
+#content_tree a:hover {
     text-decoration: none;
     color: #d0df78
 }
 
 
 #sidebar_left h3 {
-    margin: 0px 0px 0px 0px;
-
+    font-size: 200%;
 }
-#sidebar_left{
-        background-color: #f8f1e7;
-        filter:alpha(opacity=90);
-	-moz-opacity:0.9;
-	-khtml-opacity: 0.9;
-	opacity: 0.9;
 
-    position:absolute;
-    
-    /* top: 174px; */
-    top: 200px;
-
-
-    float: left;
-    width: 150px;
-    margin: 0px 0px 0px 30px;
-    padding: 1em;
-    /* background-color: #fff;*/
-}
 
 hr {
     display: block;
@@ -150,27 +132,26 @@ hr {
 }
 
 a:link {
-      color: #ad8c79;
-  text-decoration: none;
+    color: #ad8c79;
+    text-decoration: none;
 }
 
 a:visited {
-      color: #ad8c79;
-  text-decoration: none;
-
+    color: #ad8c79;
+    text-decoration: none;
 }
 
 a:hover {
-
     text-decoration: none;
     color: #666
 }
 
 a:active {
-      color: #ad8c79;
-  text-decoration: none;
+    color: #ad8c79;
+    text-decoration: none;
 }
-img{  
+
+img {
     border-style: none;
 }
 
@@ -178,8 +159,8 @@ body {
     font: normal 13px/20px Arial, sans-serif;
     color: #7d4c34;
     background-image: url("/templates/mandlen/body_top.jpg");
-    background-position: 10% 10%;
-    background-repeat:repeat-y;
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
 }
 
 html {
@@ -197,20 +178,14 @@ html {
 	-moz-opacity:0.9;
 	-khtml-opacity: 0.9;
 	opacity: 0.9;
-    
+
 
     position:absolute;
     width: 100%;
     text-align:left;
 }
 
-#header {
-    margin-left: 225px;
-    padding: 0px 0px 10px 0px;
-    margin: 0px 0px 20px -10px;
-    width: 60%;
 
-}
 
 #search {
     text-align: right;
@@ -218,26 +193,17 @@ html {
 
 
 #sidebar_right {
-
-    position:absolute;
-    top: 243px;
-
-    float: left;
-    width: 100px;
-    text-align: left;
-    padding: 1em; 
-    left: 90%;
-    margin-left: 0px;
-
-
+    padding-top: 12px;
+    background-color: #f8f1e7;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
 }
 
 #content {
-    margin: 0px 0px 0px 0px;
-    margin-left: 205px;
-    padding: 1em;
-    width: 61%;
     background-color: #f8f1e7;
+    padding: 10px;
 }
 
 fieldset {
@@ -251,7 +217,7 @@ fieldset {
 #content_image {
     margin: 10px 10px 10px 10px;
     padding: 20px 20px 20px 20px;
-    float:right;
+    float: right;
 }
 
 
@@ -288,18 +254,27 @@ label {
 #module_menu {
     font-weight: bolder;
 }
+
 #module_menu ul {
+    
     padding: 0;
     position: relative;
-        background-color: #d0df78;
+
+    background-color: #d0df78;
 }
 
 #module_menu li {
     display: inline;
+
 }
 
-#headline {
-    font-weight: bolder;
+.headline {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.ul_no_style {
+    list-style: none;
 }
 
 #footer {
