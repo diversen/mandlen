@@ -16,7 +16,7 @@ public static function printHeader(){ ?>
 <html lang="<?=register::$vars['coscms_main']['lang']?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo get_main_ini('server_name') . MENU_SUB_SEPARATOR_SEC .  template::getTitle(); ?></title>
+<title><?php echo $_SERVER['SERVER_NAME'] . MENU_SUB_SEPARATOR_SEC .  template::getTitle(); ?></title>
 
 
 <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/hot-sneaks/jquery-ui.css" />
