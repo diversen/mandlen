@@ -56,11 +56,11 @@ td.status {
 }
 
 
-#order_cat_menu  {
-    font-size: 20px;
+.order_cat_menu  {
+    
 }
 
-#order_cat_menu_active  {
-    font-size: 20px;
+.order_cat_menu_active  {
+    
     color:#000;
 }
