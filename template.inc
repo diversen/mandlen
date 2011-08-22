@@ -27,6 +27,8 @@ public static function printHeader(){ ?>
 
 <?php
 
+echo template::getMeta();
+
 template::setTemplateCss('mandlen', 7);
 template::setInlineCss(_COS_PATH . '/modules/order/order.css');
 
