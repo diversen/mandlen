@@ -160,9 +160,11 @@ img {
 body {
     font: normal 13px/20px Arial, sans-serif;
     color: #7d4c34;
+    /*
     background-image: url("/templates/mandlen/body_top.jpg");
     background-position: 50% 50%;
     background-repeat:no-repeat;
+    */
 }
 
 html {
