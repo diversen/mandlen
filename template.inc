@@ -29,14 +29,13 @@ public static function printHeader(){ ?>
 
 echo template::getMeta();
 
-template::setTemplateCss('mandlen', 7);
-template::setInlineCss(_COS_PATH . '/modules/order/order.css');
+template::setTemplateCss('mandlen', 10, 13);
 
 echo template::getCss();
 echo template::getInlineCss();
 
-echo template::getJs();
-echo template::getInlineJs();
+// print_r(template::$css);
+
 
 ?>
 
@@ -85,7 +84,7 @@ echo template::getInlineJs();
                 <div id="sidebar_left">
                 <?php
 
-                $blocks = layout::getBlocks();
+                $blocks = layout2::getBlock('blocks');
                 foreach ($blocks as $key => $val){
                     print $val;
                 }
@@ -96,7 +95,7 @@ echo template::getInlineJs();
 
          <div class="column grid_6">
              <div id="module_menu"><?php
-               echo layout::getModuleMenu(); ?>
+               echo layout2::getModuleMenu(); ?>
              </div>
 
              <div class="system_message">
@@ -127,8 +126,8 @@ public static function printFooter(){ ?>
             <div id="sidebar_right">
                 <?php
 
-                $blocks = layout::getBlocksSec();
-                foreach ($blocks as $key => $val){
+                $blocks_sec = layout2::getBlock('blocks_sec');
+                foreach ($blocks_sec as $key => $val){
                     print $val;
                 }
 
@@ -145,6 +144,12 @@ public static function printFooter(){ ?>
     </div>
     
 </div>
+    
+    <?php
+    
+echo template::getJs();
+echo template::getInlineJs();
+?>
 </body>
 </html>
 
