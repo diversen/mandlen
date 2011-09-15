@@ -7,5 +7,5 @@
  */
 $_INSTALL['VERSION'] = 1.31;
 
-$_INSTALL['PUBLIC_CLONE_URL'] = 'git://github.com/diversen/1kbgrid.git';
-$_INSTALL['PRIVATE_CLONE_URL'] = 'git@github.com:diversen/1kbgrid.git';
+$_INSTALL['PUBLIC_CLONE_URL'] = 'git://github.com/diversen/mandlen.git';
+$_INSTALL['PRIVATE_CLONE_URL'] = 'git@github.com:diversen/mandlen.git';
