@@ -19,27 +19,23 @@ public static function printHeader(){ ?>
 <title><?php echo $_SERVER['SERVER_NAME'] . MENU_SUB_SEPARATOR_SEC .  template::getTitle(); ?></title>
 
 
-<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/hot-sneaks/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/hot-sneaks/jquery-ui.css" />
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-<script src="/js/jquery-cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
+    <link href="/templates/mandlen/grid.css" type="text/css" rel="stylesheet" media="screen"/>
 
-    <link href="/templates/gaya/grid.css?version=10" type="text/css" rel="stylesheet" media="screen"/>
-
-
-  
 <?php
 
-
-
 echo template::getMeta();
-template::setTemplateCss('gaya', 10, 25);
+
+template::setTemplateCss('mandlen', 10, 13);
 
 echo template::getCss();
 echo template::getInlineCss();
 
-//print_r($_COOKIE);
+// print_r(template::$css);
+
 
 ?>
 
@@ -50,13 +46,6 @@ echo template::getInlineCss();
     <div id ="hidden">
 <a href="/account/login/index">logon</a>
 </div>
-    <?php
-$blocks = layout2::getBlock('blocks_top');
-                foreach ($blocks as $key => $val){
-                    print $val;
-                }
-
-?>
 
 <div id ="page">
 
@@ -65,25 +54,28 @@ $blocks = layout2::getBlock('blocks_top');
             &nbsp;
             </div>
             <div class="column grid_9">
-            </div>
-    </div>
 
-    <div class="row">
-            <div class="column grid_3">
                 <?php if (empty(register::$vars['coscms_main']['logo'])) { ?>
                 <a href="/"><?php echo $_SERVER['HTTP_HOST']?></a><?php
             } else { ?>
                 <div id = "logo_img"><a href="/"><img alt="<?php echo $_SERVER['HTTP_HOST']?>" src="/logo/<?=register::$vars['coscms_main']['logo']?>" /></a></div><?php
             } ?>
+
+
+
             </div>
-            <div class="column grid_6">
+
+    </div>
+
+    <div class="row">
+            <div class="column grid_3">
+            &nbsp;
+            </div>
+            <div class="column grid_9">
                 <div id="main_menu">
                 <?php
                     echo layout2::getMainMenu(); ?>
                 </div>
-            </div>
-            <div class="column grid_3">
-            &nbsp;
             </div>
     </div>
 
@@ -154,12 +146,10 @@ public static function printFooter(){ ?>
 </div>
     
     <?php
-
-    echo template::getInlineJs();
+    
 echo template::getJs();
-
+echo template::getInlineJs();
 ?>
-
 </body>
 </html>
 

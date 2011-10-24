@@ -6,20 +6,18 @@
  * @package    coslib
  */
 
-define('HTML_FORM_TEXT_SIZE', 35);
+define('HTML_FORM_TEXT_SIZE', 40);
 define('HTML_FORM_MAX_FILE_SIZE', 1048576); // 1 MB
 define('HTML_FORM_PASSWD_SIZE', 8);
-define('HTML_FORM_TEXTAREA_WT', 45);
+define('HTML_FORM_TEXTAREA_WT', 50);
 define('HTML_FORM_TEXTAREA_HT', 20);
 define('HTML_FORM_TH_ATTR', 'align="right" valign="top"');
 define('HTML_FORM_TD_ATTR', '');
 define('MENU_LIST_START', '<ul id="nav_main">');
 define('MENU_LIST_END', '</ul>');
-define('MENU_SUBLIST_START', '<li class="module_menu_li">');
-//define('MENU_SUBLIST_START', '<li class="module_li">');
+define('MENU_SUBLIST_START', '<li>');
 define('MENU_SUBLIST_END', '</li>');
-//define('MENU_SUB_SEPARATOR', '<span class="system_seperator"> :: </span> ');
-define('MENU_SUB_SEPARATOR', '<span class="system_seperator"></span> ');
+define('MENU_SUB_SEPARATOR', ' | ');
 define('MENU_SUB_SEPARATOR_SEC', ' :: ');
 
 /**
