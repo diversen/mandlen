@@ -55,7 +55,7 @@ class layout2 extends layout {
 
 
             $str.="<li>";
-            $link = create_link( $v['url'], $v['title']);
+            $link = create_link( $v['url'], lang::translate($v['title']));
             $str.=  $link;
             if (isset($v['sub'])){
                 $str .= self::parseMainMenuList($v['sub']);
