@@ -48,6 +48,27 @@ echo template::getInlineCss();
 </div>
 
 <div id ="page">
+    
+    <?php
+
+if (session::isAdmin()) { ?>
+    <div class="row">
+            <div class="column grid_12">
+                <div id="system_admin_menu">
+            <?php
+$blocks = layout2::getBlock('blocks_top');
+                foreach ($blocks as $key => $val){
+                    echo $val;
+                }
+
+?>
+
+                 </div>
+                        
+           </div>
+
+    </div>
+<?php } ?>
 
     <div class="row">
             <div class="column grid_3">
@@ -55,11 +76,8 @@ echo template::getInlineCss();
             </div>
             <div class="column grid_9">
 
-                <?php if (empty(register::$vars['coscms_main']['logo'])) { ?>
-                <a href="/"><?php echo $_SERVER['HTTP_HOST']?></a><?php
-            } else { ?>
-                <div id = "logo_img"><a href="/"><img alt="<?php echo $_SERVER['HTTP_HOST']?>" src="/logo/<?=register::$vars['coscms_main']['logo']?>" /></a></div><?php
-            } ?>
+
+                <?=template::getLogoHTML(); ?>
 
 
 
