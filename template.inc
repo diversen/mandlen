@@ -13,7 +13,7 @@ public static function printHeader(){ ?>
 
 
 <!doctype html>
-<html lang="<?=register::$vars['coscms_main']['lang']?>">
+<html lang="<?=config::$vars['coscms_main']['lang']?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo $_SERVER['SERVER_NAME'] . MENU_SUB_SEPARATOR_SEC .  template::getTitle(); ?></title>
