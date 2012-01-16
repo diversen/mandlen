@@ -56,7 +56,7 @@ if (session::isAdmin()) { ?>
             <div class="column grid_12">
                 <div id="system_admin_menu">
             <?php
-$blocks = layout2::getBlock('blocks_top');
+$blocks = layout::getBlock('blocks_top');
                 foreach ($blocks as $key => $val){
                     echo $val;
                 }
@@ -92,7 +92,7 @@ $blocks = layout2::getBlock('blocks_top');
             <div class="column grid_9">
                 <div id="main_menu">
                 <?php
-                    echo layout2::getMainMenu(); ?>
+                    echo layout::getMainMenu(); ?>
                 </div>
             </div>
     </div>
@@ -102,7 +102,7 @@ $blocks = layout2::getBlock('blocks_top');
                 <div id="sidebar_left">
                 <?php
 
-                $blocks = layout2::getBlock('blocks');
+                $blocks = layout::getBlock('blocks');
                 foreach ($blocks as $key => $val){
                     print $val;
                 }
@@ -113,7 +113,7 @@ $blocks = layout2::getBlock('blocks_top');
 
          <div class="column grid_6">
              <div id="module_menu"><?php
-               echo layout2::getModuleMenu(); ?>
+               echo layout::getModuleMenu(); ?>
              </div>
 
              <div class="system_message">
@@ -144,7 +144,7 @@ public static function printFooter(){ ?>
             <div id="sidebar_right">
                 <?php
 
-                $blocks_sec = layout2::getBlock('blocks_sec');
+                $blocks_sec = layout::getBlock('blocks_sec');
                 foreach ($blocks_sec as $key => $val){
                     print $val;
                 }
