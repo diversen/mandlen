@@ -19,12 +19,11 @@ public static function printHeader(){ ?>
 <title><?php echo $_SERVER['SERVER_NAME'] . MENU_SUB_SEPARATOR_SEC .  template::getTitle(); ?></title>
 
 
-<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/hot-sneaks/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/hot-sneaks/jquery-ui.css" />
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
-    <link href="/templates/mandlen/grid.css" type="text/css" rel="stylesheet" media="screen"/>
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script><link href="/templates/mandlen/grid.css" type="text/css" rel="stylesheet" media="screen"/>
+<script src="/js/jquery.tr.js"></script>
 <?php
 
 echo template::getMeta();
@@ -164,9 +163,10 @@ public static function printFooter(){ ?>
 </div>
     
     <?php
-    
-echo template::getJs();
+
 echo template::getInlineJs();
+echo template::getJs();
+
 ?>
 </body>
 </html>
