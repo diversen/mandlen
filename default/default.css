@@ -180,11 +180,12 @@ html {
 
 /* specific divs */
 #page {
+    /*
     filter:alpha(opacity=90);
 	-moz-opacity:0.9;
 	-khtml-opacity: 0.9;
 	opacity: 0.9;
-
+*/
 
     position:absolute;
     width: 100%;
@@ -220,7 +221,7 @@ fieldset {
     border:1px solid #ad8c79;
 }
 
-#content_image {
+.content_image {
     margin: 10px 10px 10px 10px;
     padding: 20px 20px 20px 20px;
     float: right;
@@ -237,11 +238,11 @@ fieldset {
     border: 1px solid gray;
 }
 
-#form_error {
+.form_error {
    color: #F2583E;
 }
 
-#form_confirm {
+.form_confirm {
     color: #ad8c79;
 }
 
@@ -262,16 +263,13 @@ label {
 }
 
 #module_menu ul {
-    
     padding: 0;
     position: relative;
-
     background-color: #d0df78;
 }
 
 #module_menu li {
     display: inline;
-
 }
 
 .headline {
