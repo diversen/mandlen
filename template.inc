@@ -75,9 +75,9 @@ $blocks = layout::getBlock('blocks_top');
             </div>
             <div class="column grid_9">
 
-
+                <header role="banner">
                 <?=template::getLogoHTML(); ?>
-
+                </header>
 
 
             </div>
@@ -89,10 +89,12 @@ $blocks = layout::getBlock('blocks_top');
             &nbsp;
             </div>
             <div class="column grid_9">
+                <nav>
                 <div id="main_menu">
                 <?php
                     echo layout::getMainMenu(); ?>
                 </div>
+                </nav>
             </div>
     </div>
 
@@ -111,10 +113,11 @@ $blocks = layout::getBlock('blocks_top');
          </div>
 
          <div class="column grid_6">
+             <nav>
              <div id="module_menu"><?php
                echo layout::getModuleMenu(); ?>
              </div>
-
+             </nav>
              <div class="system_message">
             <?php
 
@@ -145,7 +148,7 @@ public static function printFooter(){ ?>
 
                 $blocks_sec = layout::getBlock('blocks_sec');
                 foreach ($blocks_sec as $key => $val){
-                    print $val;
+                    echo $val;
                 }
 
                 ?>
